@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PET CARE"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#5271FF"
+        android:layout_marginBottom="32dp"
+        android:letterSpacing="0.1"
+        android:textAllCaps="true" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowCount="2"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <!-- Botón Clientes -->
+        <LinearLayout
+            android:id="@+id/btnClientes"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:backgroundTint="#0cc0df"
+            android:orientation="vertical"
+            android:background="@drawable/btn_cuadrado"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_cliente"
+                android:contentDescription="Icono Cliente" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLIENTES"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Botón Mascotas -->
+        <LinearLayout
+            android:id="@+id/btnMascotas"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:backgroundTint="#7ed957"
+            android:orientation="vertical"
+            android:background="@drawable/btn_cuadrado"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_mascota"
+                android:contentDescription="Icono Mascota" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MASCOTAS"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Botón Vacunas -->
+        <LinearLayout
+            android:id="@+id/btnVacunas"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:backgroundTint="#ffde59"
+            android:orientation="vertical"
+            android:background="@drawable/btn_cuadrado"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_vacuna"
+                android:contentDescription="Icono Vacuna" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VACUNAS"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </GridLayout>
+</LinearLayout>

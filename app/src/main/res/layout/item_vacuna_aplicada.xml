@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_borde_azul"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="12dp"
+    android:gravity="center_vertical">
+
+    <!-- Contenido de texto -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mascota:"
+            android:textColor="#5271FF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVacuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacuna:"
+            android:textColor="#5271FF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha:"
+            android:textColor="#5271FF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtObservaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observaciones:"
+            android:textColor="#5271FF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Botón eliminar -->
+    <ImageButton
+        android:id="@+id/btnEliminarVacuna"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Eliminar vacuna"
+        app:tint="#5271FF" />
+
+    <!-- Botón editar -->
+    <ImageButton
+        android:id="@+id/btnEditarVacuna"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Editar vacuna"
+        app:tint="#5271FF" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_borde_azul"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="12dp"
+    android:gravity="center_vertical">
+
+    <!-- Datos de la mascota -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNombreMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textColor="#5271FF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEspecieMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especie: "
+            android:textColor="#5271FF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDuenoMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dueño: "
+            android:textColor="#5271FF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCantidadVacunas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nro Vacunas: "
+            android:textColor="#5271FF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Botones -->
+    <ImageButton
+        android:id="@+id/btnEliminarMascota"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="#5271FF"
+        android:contentDescription="Eliminar mascota" />
+
+    <ImageButton
+        android:id="@+id/btnEditarMascota"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="#5271FF"
+        android:contentDescription="Editar mascota" />
+</LinearLayout>
